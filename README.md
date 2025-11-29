@@ -1,16 +1,20 @@
-# prova_flutter_202310052
+# App de Tarefas Profissionais
 
-A new Flutter project.
+**Aluno:** Gabriel de Oliveira Ramin
+**RA:** 202310052
+**Curso:** Ciência da Computação
 
-## Getting Started
+## Personalização
+- **Campo Extra:** turnoAtendimento
+- **Tema:** TechGreen (Teal + GreenAccent)
 
-This project is a starting point for a Flutter application.
+## Descrição
+Aplicativo para gerenciamento de tarefas desenvolvido em Flutter utilizando Sqflite para persistência de dados local.
 
-A few resources to get you started if this is your first Flutter project:
+## Dificuldades Encontradas
+A única dificuldade do projeto foi a parte de conexão com o banco de dados, o resto a estrutura foi bem simples de realizar.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como rodar
+1. git clone [url-do-repo]
+2. flutter pub get
+3. flutter run
