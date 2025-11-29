@@ -15,6 +15,6 @@ Aplicativo para gerenciamento de tarefas desenvolvido em Flutter utilizando Sqfl
 A única dificuldade do projeto foi a parte de conexão com o banco de dados, o resto a estrutura foi bem simples de realizar.
 
 ## Como rodar
-1. git clone [url-do-repo]
+1. git clone [[[\\\[url-do-repo\\\]](https://github.com/gabrielramin98-byte/prova_flutter_202310052#)](https://github.com/gabrielramin98-byte/prova_flutter_202310052#)](https://github.com/gabrielramin98-byte/prova_flutter_202310052#)
 2. flutter pub get
 3. flutter run
