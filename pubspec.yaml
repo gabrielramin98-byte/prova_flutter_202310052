@@ -1,0 +1,38 @@
+name: prova_flutter_202310052
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Dependências do projeto
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3  # Útil para montar caminhos de diretórios
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Para adicionar assets, descomente e edite a seção abaixo:
+  # assets:
+  #   - images/
+
+  # Para fontes personalizadas, descomente e edite a seção abaixo:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
