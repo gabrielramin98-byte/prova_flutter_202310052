@@ -38,4 +38,29 @@ class DatabaseHelper {
       },
     );
   }
+
+  // Create
+  Future<int> insertTarefa(Map<String, dynamic> row) async {
+    Database db = await database;
+    return await db.insert('tarefas', row);
+  }
+
+  // Read
+  Future<List<Map<String, dynamic>>> queryAllTarefas() async {
+    Database db = await database;
+    return await db.query('tarefas');
+  }
+
+  // Update
+  Future<int> updateTarefa(Map<String, dynamic> row) async {
+    Database db = await database;
+    int id = row['id'];
+    return await db.update('tarefas', row, where: 'id = ?', whereArgs: [id]);
+  }
+
+  // Delete
+  Future<int> deleteTarefa(int id) async {
+    Database db = await database;
+    return await db.delete('tarefas', where: 'id = ?', whereArgs: [id]);
+  }
 }
