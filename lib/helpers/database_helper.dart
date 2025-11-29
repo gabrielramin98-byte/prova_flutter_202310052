@@ -12,6 +12,9 @@ class DatabaseHelper {
   Future<Database> get database async {
     if (_database != null) return _database!;
     _database = await _initDatabase();
+    final dbPath = await getDatabasesPath();
+    final path = join(dbPath, 'tarefas_202310052.db');
+    print('LOCATION_DB: O arquivo do banco está em: $path');
     return _database!;
   }
 
@@ -24,7 +27,6 @@ class DatabaseHelper {
       path,
       version: 1,
       onCreate: (db, version) {
-        // REQUISITO: Tabela com campo extra 'turnoAtendimento'
         return db.execute('''
           CREATE TABLE tarefas(
             id INTEGER PRIMARY KEY AUTOINCREMENT,

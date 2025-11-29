@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'helpers/database_helper.dart';
 import 'models/tarefa.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart'; // Import novo
+import 'dart:io';
 
 void main() {
+  // Inicializa banco para Windows/PC
+  if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+    sqfliteFfiInit();
+    databaseFactory = databaseFactoryFfi;
+  }
   runApp(const MyApp());
 }
 
